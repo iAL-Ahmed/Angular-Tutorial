@@ -1,0 +1,17 @@
+.firstBox {
+  border: 2px solid red;
+  width: 150px;
+}
+
+.secondBox {
+  border: 2px solid blue;
+  width: 100px;
+}
+
+.thirdBox {
+  border: 2px solid green;
+  width: 100px;
+}
+
+
+
