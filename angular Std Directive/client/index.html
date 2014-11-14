@@ -5,7 +5,15 @@
     <link rel="stylesheet" href="app/style.css">
   </head>
   <body ng-app="angularThing">
-    <div ui-view> </div>
+    <div ng-controller="secondController"; class="dir">
+      Directives!
+      <a-Second-Directive data="joe1"> </a-Second-Directive>
+      <a-Second-Directive data="joe2"/> </a-Second-Directive>
+    </div>
+    <div ui-view>
+      
+    </div>
+    
 
   <!-- scripts and stuff -->
   <script src="bower_components/angular/angular.js"></script>
@@ -15,5 +23,6 @@
   <script src="./app/main/main.Factory.js"></script>
   <script src="./app/second/second.Controller.js"></script>
   <script src="./app/second/second.Factory.js"></script>
+  <script src="./app/second/second.directive.js"></script>
   </body>
 </html>
