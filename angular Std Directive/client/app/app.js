@@ -1,4 +1,4 @@
-
+//Directives are in the "second" directory
 angular.module("angularThing", [
   'ui.router',
   'angularThing.mainController', //the "angular_thing" is the ng-app you are using
