@@ -1,6 +1,6 @@
 angular.module('angularThing.mainFactory', [])
 
-.factory('Main', [function(){ //name of the factory object to be made and the contructor function.
+.factory('Main', [function(){ //name of the factory object to be made and the constructor function.
   return {message: "First"}   //this function may call other functions depending 
 }])                           //on how you design it, but it will be returning an
                               //object which will be labeled "Main"
