@@ -23,6 +23,11 @@ angular.module("angularThing", [
       templateUrl: 'app/second/second.tpl.html',
       controller:'secondController'
     })
+    .state('test', {
+      url: '/test/:id',
+      templateUrl: 'app/second/second.tpl.html',
+      controller: 'secondController'
+    })
   
 
 }])
