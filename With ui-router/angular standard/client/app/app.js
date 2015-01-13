@@ -1,15 +1,15 @@
 
 angular.module("angularThing", [ 
-  'ui.router',                   //the angular plug in responsible state management
+  'ui.router',                   //the angular plugin responsible for state management
   'angularThing.mainController', //the "angularThing" is the ng-app you are using
   'angularThing.mainFactory',
   'angularThing.secondController',
   'angularThing.secondFactory'
-]) //add any modules to be injected into app
+]) //add any modules to be injected into app ("dependency injection")
 
 .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
   $urlRouterProvider.otherwise('/main'); //gives a default state to load in the event that 
-                                         //the user selects a site url that does not exist.
+                                         //the user selects a site url that does not have a handled route (url).
 
   $stateProvider  //you must load ALL states that will be viewable in this ui-view here.
                   //$stateProvider is a part of ui-router
@@ -23,11 +23,5 @@ angular.module("angularThing", [
       templateUrl: 'app/second/second.tpl.html',
       controller:'secondController'
     })
-    .state('test', {
-      url: '/test/:id',
-      templateUrl: 'app/second/second.tpl.html',
-      controller: 'secondController'
-    })
-  
 
 }])
